@@ -9,13 +9,13 @@ Function akan me-return string yang telah bersih dari berbagai simbol, hanya men
 function hapusSimbol(str) {
     // you can only write your code here!
     var change = /[0-9a-zA-Z]/
-    var temp = ''
+    var result = ''
     for (i = 0; i < str.length; i++) {
         if(change.test(str[i])){
-            temp += str[i]
+            result += str[i]
         }
     }
-    return temp
+    return result
 }
 
 // TEST CASES
